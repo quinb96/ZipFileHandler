@@ -19,7 +19,7 @@ public class FileZipper{
 		Scanner userInput = new Scanner(System.in);
 		System.out.println("Would you like to Zip or Unzip?");
 		String result = userInput.nextLine();
-		//System.out.println("You chose " + result);
+		
 		if(Objects.equals(result,"Zip")){
 			zipFile();
 		} else if (Objects.equals(result, "zip")) {
