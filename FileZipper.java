@@ -40,8 +40,8 @@ public class FileZipper{
 		String filePath = fileInput.nextLine();
 
 		try{
-			/*Can only put buffer variables in buffered streams
-			If no buffered streams are used, then do not use the offset and len parameters in the
+			/*Can only put buffer variables in buffered stream objects.
+			If no buffered stream objects are used, then do not use the offset and len parameters in the
 			read() function.
 			 */
 			File file = new File(filePath);
@@ -105,8 +105,8 @@ public class FileZipper{
 			destinationDirectory.mkdirs();
 		}
 		try {
-			/*Can only put buffer variables in buffered streams
-			If no buffered streams are used, then do not use the offset and len parameters in the
+			/*Can only put buffer variables in buffered stream objects.
+			If no buffered stream objects are used, then do not use the offset and len parameters in the
 			read() function.
 			 */
 			FileInputStream fileInputStream = new FileInputStream(zipFile);
