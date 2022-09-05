@@ -111,7 +111,7 @@ public class FileZipper{
 			 */
 			FileInputStream fileInputStream = new FileInputStream(zipFile);
 			BufferedInputStream bufferedInputStream = new BufferedInputStream(fileInputStream, BUFFER);
-			ZipInputStream zipInputStream = new ZipInputStream(bufferedInputStream); //Cannot put a buffer in here
+			ZipInputStream zipInputStream = new ZipInputStream(bufferedInputStream);
 			ZipEntry zipEntry = zipInputStream.getNextEntry();
 			while (zipEntry != null) {
 				byte[] buffer = new byte[BUFFER];
